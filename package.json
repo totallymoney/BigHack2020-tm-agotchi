@@ -1,0 +1,35 @@
+{
+  "name": "bighack2020-tm-agotchi",
+  "version": "1.0.0",
+  "description": "slack pet",
+  "main": "./lib/handler.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totallymoney/BigHack2020-tm-agotchi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/totallymoney/BigHack2020-tm-agotchi/issues"
+  },
+  "homepage": "https://github.com/totallymoney/BigHack2020-tm-agotchi#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "aws-sdk": "^2.651.0",
+    "jest": "^25.2.7",
+    "serverless": "^1.67.0",
+    "serverless-pseudo-parameters": "^2.5.0",
+    "serverless-webpack": "^5.3.1",
+    "ts-jest": "^25.4.0",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.5",
+    "uuid": "^7.0.3"
+  }
+}

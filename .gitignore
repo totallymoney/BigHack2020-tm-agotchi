@@ -1,0 +1,36 @@
+# package directories
+node_modules
+jspm_packages
+# Serverless directories
+.serverless
+.dynamodb
+.DS_Store
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+.scripts
+
+pids
+logs
+results
+tmp
+# API keys and secrets
+.env
+bower_components
+
+# OS metadata
+.DS_Store
+Thumbs.db
+.webpack
+lib
+
+coverage
+
+.version
+.vscode
