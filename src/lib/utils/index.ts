@@ -1,0 +1,5 @@
+export { decreaseValue } from "./decreaseValue"
+export { increaseValue } from "./increaseValue"
+export { getHygieneValue } from "./getHygieneValue"
+export { getHungerValue } from "./getHungerValue"
+export { getAttentionValue } from "./getAttentionValue"
