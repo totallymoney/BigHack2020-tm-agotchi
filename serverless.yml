@@ -36,6 +36,11 @@ functions:
           method: get
           path: get-tmagotchi
 
+  updateTmAgotchi:
+    handler: handlers/handler.updateTmAgotchi
+    events:
+      - schedule: cron(0/60 9-17 ? * MON-FRI *) # every hour between 9-6 Mon to Fri
+
 resources:
   Resources:
     BickHack2020TmAgotchi:
