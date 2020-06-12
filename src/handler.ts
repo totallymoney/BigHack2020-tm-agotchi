@@ -121,32 +121,53 @@ export const respond = (message: any, statusCode: number): any => {
   }
 }
 
+const handlePlayCommand = (state: State, text) => {
+  const [activity] = activities.filter((a) => a.name === text)
+    if (activity) {
+    return {
+      newState: interact(state, { name: "Play", activity }),
+      message: `${state.name} really enjoyed that activity with you!`
+    }
+  }
+}
+
+const handleEatCommand = (state: State, text: string) => {
+    const [item] = food.concat(drinks).filter((i) => i.name === text)
+    if (item) {
+      return {
+        newState: interact(state, { name: "Eat", item }),
+        message: `chomp chomp. ${state.name} devoured that!`
+      }
+    }
+}
+
+const handleResponse = (state: State, command: string, text: string) => {
+  const play = '/play'
+  const eat = '/eat'
+
+  switch (command) {
+    case play:
+      return handlePlayCommand(state, text)
+    case eat: 
+      return handleEatCommand(state, text)
+  
+    default:
+      return {
+        newState: state,
+        message: `${state.name} is not interested!`
+      }
+  }
+}
+
 // update the pet status in tm-agotchi table
 export const updateStatus: Handler = async (event: APIGatewayEvent) => {
   const state = await repository.get("Squiggle")
   const body = JSON.parse(event.body)
-  const { eat, play } = body
 
-  let newState
-  let message
-  if (eat) {
-    const [item] = food.concat(drinks).filter((i) => i.name === eat)
-    if (item) {
-      newState = interact(state, { name: "Eat", item })
-      message = `chomp chomp. ${state.name} devoured that!`
-    }
-    newState = state
-    message = `${state.name} doesn't like that!`
-  }
-  if (play) {
-    const [activity] = activities.filter((a) => a.name === play)
-    if (activity) {
-      newState = interact(state, { name: "Play", activity })
-      message = `${state.name} really enjoyed that activity with you!`
-    }
-    newState = state
-    message = `${state.name} doesn't know how!`
-  }
+  const { command, text } = body
+
+  const { newState, message } = handleResponse(state, command, text)
+
   try {
     await repository.put(newState)
     return respond(message, 201)
