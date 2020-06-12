@@ -41,7 +41,7 @@ functions:
     events:
       - http:
           method: get
-          path: status/{id}
+          path: status
           cors: true
 
 resources:
