@@ -62,6 +62,19 @@ const eat = (state: State, item: Food | Drink): State => {
   }
 }
 
+const groom = (state: State): State => {
+  const { needs } = state 
+  const { hygiene, attention } = needs
+  return {
+    ...state, 
+    needs: {
+      ...needs,
+      hygiene: increaseValue(hygiene, 10),
+      attention: increaseValue(attention, 10),
+    }
+  }
+}
+
 const neglect = (state: State): State => {
   const { lastUpdated, needs } = state
   const { attention } = needs
@@ -88,6 +101,8 @@ const interact = (state: State, action: Action): State => {
       return play(state, action.activity)
     case "Eat":
       return eat(state, action.item)
+    case 'Groom':
+      return groom(state)
     default:
       return state
   }
@@ -141,16 +156,25 @@ const handleEatCommand = (state: State, text: string) => {
     }
 }
 
+const handleGroomCommand = (state: State) => {
+  return {
+    newState: interact(state, { name: 'Groom' }),
+    message: `${state.name} feels refreshed!`
+  }
+}
+
 const handleResponse = (state: State, command: string, text: string) => {
   const play = '/play'
   const eat = '/eat'
+  const groom = '/groom'
 
   switch (command) {
     case play:
       return handlePlayCommand(state, text)
     case eat: 
       return handleEatCommand(state, text)
-  
+    case groom:
+      return handleGroomCommand(state)
     default:
       return {
         newState: state,

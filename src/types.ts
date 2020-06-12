@@ -31,7 +31,11 @@ export interface EatAction {
   item: Food | Drink;
 }
 
-export type Action = PlayAction | EatAction;
+export interface GroomAction {
+  name: "Groom";
+}
+
+export type Action = PlayAction | EatAction | GroomAction;
 
 export type Need = "Hygiene" | "Hunger" | "Attention";
 
