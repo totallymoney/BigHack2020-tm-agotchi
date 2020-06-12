@@ -29,6 +29,7 @@
     "webpack": "^4.43.0"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.5"
+    "@types/aws-lambda": "^8.10.55",
+    "aws-lambda": "^1.0.5",
   }
 }
