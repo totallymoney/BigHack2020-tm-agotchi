@@ -29,19 +29,12 @@ package:
   excludeDevDependencies: true
 
 functions:
-  updateStatus:
-    handler: src/handler.updateStatus
+  handleCommand:
+    handler: src/handler.handleCommand
     events:
       - http:
           method: post
-          path: update
-          cors: true
-  getStatus:
-    handler: src/handler.getStatus
-    events:
-      - http:
-          method: get
-          path: status
+          path: command
           cors: true
 
 resources:
