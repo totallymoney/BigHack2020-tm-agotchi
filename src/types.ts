@@ -1,51 +1,52 @@
-export type Nutrition = "Healthy" | "Unhealthy"
+export type Nutrition = "Healthy" | "Unhealthy";
 
-export type Portion = "Small" | "Medium" | "Large"
+export type Portion = "Small" | "Medium" | "Large";
 
-export type Intensity = "Mild" | "Intense"
+export type Intensity = "Mild" | "Intense";
 
 export interface Food {
-  name: string
-  nutrition: Nutrition
-  portion: Portion
+  name: string;
+  nutrition: Nutrition;
+  portion: Portion;
 }
 
 export interface Drink {
-  name: string
-  nutrition: Nutrition
-  portion: Portion
+  name: string;
+  nutrition: Nutrition;
+  portion: Portion;
 }
 
 export interface Activity {
-  name: string
-  intensity: Intensity
+  name: string;
+  intensity: Intensity;
 }
 
 export interface PlayAction {
-  name: "Play"
-  activity: Activity
+  name: "Play";
+  activity: Activity;
 }
 
 export interface EatAction {
-  name: "Eat"
-  item: Food | Drink
+  name: "Eat";
+  item: Food | Drink;
 }
 
-export type Action = PlayAction | EatAction
+export type Action = PlayAction | EatAction;
 
-export type Need = "Hygiene" | "Hunger" | "Attention"
+export type Need = "Hygiene" | "Hunger" | "Attention";
 
 export interface Needs {
-  hygiene: number
-  hunger: number
-  attention: number
+  hygiene: number;
+  hunger: number;
+  attention: number;
 }
 
 export interface State {
-  created: string
-  lastUpdated: string
-  name: string
-  age: string
-  weight: number
-  needs: Needs
+  id: string;
+  created: string;
+  lastUpdated: string;
+  name: string;
+  age: string;
+  weight: number;
+  needs: Needs;
 }
