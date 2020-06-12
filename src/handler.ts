@@ -213,9 +213,9 @@ const handleGroomCommand = (state: State) => {
             type: "mrkdwn",
             text: `
               \`\`\`
-              $‾‾‾‾‾‾‾‾‾‾‾$
-              $  - ‿ -    |
-              $___________$
+              |‾‾‾‾‾‾‾‾‾‾‾|
+              |  - ‿ -    |
+              |___________|
               \`\`\`
               sparkle sparkle. ${state.name} feels refreshed!
             `,
@@ -226,10 +226,50 @@ const handleGroomCommand = (state: State) => {
   }
 }
 
+const handleCheckCommand = (state: State) => {
+  const {
+    needs: { hygiene, hunger, attention },
+  } = state
+  return {
+    newState: state,
+    message: {
+      attachments: [
+        {
+          color: "#f2c744",
+          blocks: [
+            {
+              type: "section",
+              text: {
+                type: "mrkdwn",
+                text: `Hygiene: ${hygiene}%`,
+              },
+            },
+            {
+              type: "section",
+              text: {
+                type: "mrkdwn",
+                text: `Hunger: ${hunger}%`,
+              },
+            },
+            {
+              type: "section",
+              text: {
+                type: "mrkdwn",
+                text: `Attention: ${attention}%`,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  }
+}
+
 const handleResponse = (state: State, command: string, text: string) => {
   const play = "/play"
   const eat = "/eat"
   const groom = "/groom"
+  const check = "/check"
 
   switch (command) {
     case play:
@@ -238,6 +278,8 @@ const handleResponse = (state: State, command: string, text: string) => {
       return handleEatCommand(state, text)
     case groom:
       return handleGroomCommand(state)
+    case check:
+      return handleCheckCommand(state)
     default:
       return {
         newState: state,
@@ -247,7 +289,7 @@ const handleResponse = (state: State, command: string, text: string) => {
 }
 
 // update the pet status in tm-agotchi table
-export const updateStatus: Handler = async (event: APIGatewayEvent) => {
+export const handleCommand: Handler = async (event: APIGatewayEvent) => {
   let state = await repository.get("Squiggle")
 
   if (!state) {
@@ -267,16 +309,5 @@ export const updateStatus: Handler = async (event: APIGatewayEvent) => {
     return respond(message, 201)
   } catch (err) {
     return respond(err, 400)
-  }
-}
-
-// get the pet status from tm-agotchi table
-export const getStatus: Handler = async () => {
-  try {
-    // get from dynamoDB
-    const status = await repository.get("Squiggle")
-    return respond(status, 200)
-  } catch (err) {
-    return respond(err, 404)
   }
 }
