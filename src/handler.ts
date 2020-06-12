@@ -145,7 +145,24 @@ const handlePlayCommand = (state: State, text) => {
   if (activity) {
     return {
       newState: interact(state, { name: "Play", activity }),
-      message: `${state.name} really enjoyed that activity with you!`,
+      message: {
+        blocks: [
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: `
+                \`\`\`
+                |‾‾‾‾‾‾‾‾‾‾‾|
+                |   ♥️ ‿ ♥️   |
+                |___________|
+                \`\`\`
+                fun fun. ${state.name} really enjoyed that activity with you!
+              `,
+            },
+          },
+        ],
+      },
     }
   }
   return {
@@ -159,13 +176,24 @@ const handleEatCommand = (state: State, text: string) => {
   if (item) {
     return {
       newState: interact(state, { name: "Eat", item }),
-      message: `
-      \`\`\`
-      |‾‾‾‾‾‾‾‾‾‾‾|
-      |  ◕ ‿ ◕    |
-      |___________|
-      \`\`\`
-      chomp chomp. ${state.name} devoured that!`,
+      message: {
+        blocks: [
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: `
+                \`\`\`
+                |‾‾‾‾‾‾‾‾‾‾‾|
+                |  ◕ o ◕  ) |  
+                |___________|
+                \`\`\`
+                chomp chomp. ${state.name} devoured that!
+              `,
+            },
+          },
+        ],
+      },
     }
   }
   return {
@@ -177,7 +205,24 @@ const handleEatCommand = (state: State, text: string) => {
 const handleGroomCommand = (state: State) => {
   return {
     newState: interact(state, { name: "Groom" }),
-    message: `${state.name} feels refreshed!`,
+    message: {
+      blocks: [
+        {
+          type: "section",
+          text: {
+            type: "mrkdwn",
+            text: `
+              \`\`\`
+              $‾‾‾‾‾‾‾‾‾‾‾$
+              $  - ‿ -    |
+              $___________$
+              \`\`\`
+              sparkle sparkle. ${state.name} feels refreshed!
+            `,
+          },
+        },
+      ],
+    },
   }
 }
 
