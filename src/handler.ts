@@ -125,12 +125,12 @@ export const respond = (message: any, statusCode: number): any => {
 export const updateStatus: Handler = async (event: APIGatewayEvent) => {
   const state = await repository.get("Squiggle")
   const body = JSON.parse(event.body)
-  const { feed, play } = body
+  const { eat, play } = body
 
   let newState
   let message
-  if (feed) {
-    const [item] = food.concat(drinks).filter((i) => i.name === feed)
+  if (eat) {
+    const [item] = food.concat(drinks).filter((i) => i.name === eat)
     if (item) {
       newState = interact(state, { name: "Eat", item })
       message = `chomp chomp. ${state.name} devoured that!`
