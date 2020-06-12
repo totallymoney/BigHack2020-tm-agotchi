@@ -155,7 +155,13 @@ const handleEatCommand = (state: State, text: string) => {
   if (item) {
     return {
       newState: interact(state, { name: "Eat", item }),
-      message: `chomp chomp. ${state.name} devoured that!`
+      message: `
+      \`\`\`
+      |‾‾‾‾‾‾‾‾‾‾‾|
+      |  ◕ ‿ ◕    |
+      |___________|
+      \`\`\`
+      chomp chomp. ${state.name} devoured that!`
     };
   }
   return {
