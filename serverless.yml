@@ -21,7 +21,7 @@ provider:
         - dynamodb:DeleteItem
         - dynamodb:BatchGetItem
       Resource:
-        - "#{BickHack2020TmAgotchi.Arn}"
+        - "#{BigHack2020TmAgotchi.Arn}"
   environment:
     TMAGOTCHI_TABLE_NAME: ${self:custom.tmAgotchiTableName}
 
