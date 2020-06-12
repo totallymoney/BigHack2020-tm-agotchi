@@ -29,8 +29,9 @@ bower_components
 Thumbs.db
 .webpack
 
-
 coverage
 
 .version
 .vscode
+
+lib

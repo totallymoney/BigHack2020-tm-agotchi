@@ -1,6 +1,5 @@
 import { decreaseValue, increaseValue } from "./lib/utils";
 import { State, Action, Food, Drink, Activity } from "./types";
-import { v4 as guid } from "uuid";
 
 const play = (state: State, activity: Activity): State => {
   const {
@@ -90,7 +89,7 @@ const interact = (state: State, action: Action): State => {
 };
 
 const initialState: State = {
-  id: guid(),
+  id: "Squiggle",
   created: new Date().toISOString(),
   lastUpdated: new Date().toISOString(),
   name: "Squiggle",
