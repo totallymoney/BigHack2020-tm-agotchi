@@ -56,8 +56,6 @@ resources:
         KeySchema:
           - AttributeName: id
             KeyType: HASH
-          - AttributeName: id
-            KeyType: RANGE
         BillingMode: PAY_PER_REQUEST
 
 custom:
