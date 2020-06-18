@@ -1,6 +1,6 @@
 # BigHack2020-tm-agotchi
 
-### Data
+### Slack Emoji Index
 
 - [Food](#food)
 - [Drinks](#drinks)
