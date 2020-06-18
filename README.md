@@ -1,1 +1,105 @@
 # BigHack2020-tm-agotchi
+
+#### Food
+
+| | emoji | shortcode | nutrition | portion |
+| [top](#) | :apple: | `:apple:` | Healthy | Small |
+| [top](#) | :avocado: | `:avocado:` | Healthy | Small |
+| [top](#) | :bacon: | `:bacon:` | Unhealthy | Small |
+| [top](#) | :baguette_bread: | `:baguette_bread:` | Healthy | Medium |
+| [top](#) | :banana: | `:banana:` | Healthy | Small |
+| [top](#) | :bento: | `:bento:` | Unhealthy | Large |
+| [top](#) | :bowl_with_spoon: | `:bowl_with_spoon:` | Healthy | Medium |
+| [top](#) | :bread: | `:bread:` | Healthy | Medium |
+| [top](#) | :broccoli: | `:broccoli:` | Healthy | Small |
+| [top](#) | :burrito: | `:burrito:` | Unhealthy | Medium |
+| [top](#) | :cake: | `:cake:` | Unhealthy | Medium |
+| [top](#) | :candy: | `:candy:` | Unhealthy | Small |
+| [top](#) | :canned_food: | `:canned_food:` | Unhealthy | Medium |
+| [top](#) | :carrot: | `:carrot:` | Healthy | Small |
+| [top](#) | :cheese_wedge: | `:cheese_wedge:` | Unhealthy | Large |
+| [top](#) | :cherries: | `:cherries:` | Healthy | Small |
+| [top](#) | :chestnut: | `:chestnut:` | Healthy | Small |
+| [top](#) | :chocolate_bar: | `:chocolate_bar:` | Unhealthy | Medium |
+| [top](#) | :coconut: | `:coconut:` | Healthy | Medium |
+| [top](#) | :coffee: | `:coffee:` | Unhealthy | Medium |
+| [top](#) | :cookie: | `:cookie:` | Healthy | Medium |
+| [top](#) | :corn: | `:corn:` | Healthy | Medium |
+| [top](#) | :croissant: | `:croissant:` | Unhealthy | Medium |
+| [top](#) | :cucumber: | `:cucumber:` | Healthy | Small |
+| [top](#) | :curry: | `:curry:` | Unhealthy | Large |
+| [top](#) | :custard: | `:custard:` | Unhealthy | Medium |
+| [top](#) | :cut_of_meat: | `:cut_of_meat:` | Unhealthy | Large |
+| [top](#) | :dango: | `:dango:` | Unhealthy | Small |
+| [top](#) | :doughnut: | `:doughnut:` | Unhealthy | Medium |
+| [top](#) | :dumpling: | `:dumpling:` | Unhealthy | Small |
+| [top](#) | :egg: | `:egg:` | Healthy | Small |
+| [top](#) | :eggplant: | `:eggplant:` | Healthy | Medium |
+| [top](#) | :fish_cake: | `:fish_cake:` | Unhealthy | Medium |
+| [top](#) | :fortune_cookie: | `:fortune_cookie:` | Unhealthy | Small |
+| [top](#) | :fried_egg: | `:fried_egg:` | Unhealthy | Small |
+| [top](#) | :fried_shrimp: | `:fried_shrimp:` | Unhealthy | Small |
+| [top](#) | :fries: | `:fries:` | Unhealthy | Medium |
+| [top](#) | :grapes: | `:grapes:` | Healthy | Medium |
+| [top](#) | :green_apple: | `:green_apple:` | Healthy | Small |
+| [top](#) | :green_salad: | `:green_salad:` | Healthy | Medium |
+| [top](#) | :hamburger: | `:hamburger:` | Unhealthy | Large |
+| [top](#) | :herb: | `:herb:` | Healthy | Small |
+| [top](#) | :honey_pot: | `:honey_pot:` | Unhealthy | Large |
+| [top](#) | :hot_pepper: | `:hot_pepper:` | Healthy | Small |
+| [top](#) | :hotdog: | `:hotdog:` | Unhealthy | Medium |
+| [top](#) | :ice_cream: | `:ice_cream:` | Unhealthy | Medium |
+| [top](#) | :icecream: | `:icecream:` | Unhealthy | Medium |
+| [top](#) | :kiwifruit: | `:kiwifruit:` | Healthy | Small |
+| [top](#) | :lemon: | `:lemon:` | Healthy | Small |
+| [top](#) | :lollipop: | `:lollipop:` | Unhealthy | Medium |
+| [top](#) | :meat_on_bone: | `:meat_on_bone:` | Unhealthy | Large |
+| [top](#) | :melon: | `:melon:` | Healthy | Large |
+| [top](#) | :mushroom: | `:mushroom:` | Healthy | Small |
+| [top](#) | :oden: | `:oden:` | Unhealthy | Medium |
+| [top](#) | :pancakes: | `:pancakes:` | Unhealthy | Large |
+| [top](#) | :peach: | `:peach:` | Healthy | Small |
+| [top](#) | :peanuts: | `:peanuts:` | Healthy | Small |
+| [top](#) | :pear: | `:pear:` | Healthy | Small |
+| [top](#) | :pie: | `:pie:` | Unhealthy | Large |
+| [top](#) | :pineapple: | `:pineapple:` | Healthy | Large |
+| [top](#) | :pizza: | `:pizza:` | Unhealthy | Medium |
+| [top](#) | :popcorn: | `:popcorn:` | Unhealthy | Small |
+| [top](#) | :potato: | `:potato:` | Unhealthy | Medium |
+| [top](#) | :poultry_leg: | `:poultry_leg:` | Unhealthy | Medium |
+| [top](#) | :pretzel: | `:pretzel:` | Unhealthy | Medium |
+| [top](#) | :ramen: | `:ramen:` | Healthy | Medium |
+| [top](#) | :rice_ball: | `:rice_ball:` | Healthy | Medium |
+| [top](#) | :rice_cracker: | `:rice_cracker:` | Healthy | Small |
+| [top](#) | :rice: | `:rice:` | Healthy | Medium |
+| [top](#) | :sandwich: | `:sandwich:` | Healthy | Medium |
+| [top](#) | :shallow_pan_of_food: | `:shallow_pan_of_food:` | Healthy | Medium |
+| [top](#) | :shaved_ice: | `:shaved_ice:` | Unhealthy | Medium |
+| [top](#) | :spaghetti: | `:spaghetti:` | Unhealthy | Large |
+| [top](#) | :stew: | `:stew:` | Healthy | Large |
+| [top](#) | :strawberry: | `:strawberry:` | Healthy | Small |
+| [top](#) | :stuffed_flatbread: | `:stuffed_flatbread:` | Healthy | Medium |
+| [top](#) | :sushi: | `:sushi:` | Healthy | Medium |
+| [top](#) | :sweet_potato: | `:sweet_potato:` | Healthy | Medium |
+| [top](#) | :taco: | `:taco:` | Unhealthy | Medium |
+| [top](#) | :takeout_box: | `:takeout_box:` | Unhealthy | Large |
+| [top](#) | :tangerine: | `:tangerine:` | Healthy | Small |
+| [top](#) | :tomato: | `:tomato:` | Healthy | Small |
+| [top](#) | :watermelon: | `:watermelon:` | Healthy | Medium |
+
+#### Drinks
+
+| | emoji | shortcode | nutrition | portion |
+| [top](#) | :baby_bottle: | `:baby_bottle:` | Healthy | Small |
+| [top](#) | :beer: | `:beer:` | Unhealthy | Medium |
+| [top](#) | :beers: | `:beers:` | Unhealthy | Medium |
+| [top](#) | :champagne: | `:champagne:` | Unhealthy | Large |
+| [top](#) | :clinking_glasses: | `:clinking_glasses:` | Unhealthy | Large |
+| [top](#) | :cocktail: | `:cocktail:` | Unhealthy | Medium |
+| [top](#) | :cup_with_straw: | `:cup_with_straw:` | Unhealthy | Medium |
+| [top](#) | :glass_of_milk: | `:glass_of_milk:` | Healthy | Medium |
+| [top](#) | :sake: | `:sake:` | Unhealthy | Large |
+| [top](#) | :tea: | `:tea:` | Healthy | Small |
+| [top](#) | :tropical_drink: | `:tropical_drink:` | Unhealthy | Large |
+| [top](#) | :tumbler_glass: | `:tumbler_glass:` | Unhealthy | Large |
+| [top](#) | :wine_glass: | `:wine_glass:` | Unhealthy | Large |
