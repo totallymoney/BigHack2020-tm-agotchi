@@ -1,5 +1,10 @@
 # BigHack2020-tm-agotchi
 
+## Table of Contents
+
+- [Slack Commands](#slack-commands)
+- [Slack Emoji Index](#slack-emoji-index)
+
 ### Slack Commands
 
 | command  |                      | action                             |
