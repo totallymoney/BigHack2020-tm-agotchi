@@ -18,7 +18,7 @@
   "homepage": "https://github.com/totallymoney/BigHack2020-tm-agotchi#readme",
   "devDependencies": {
     "@types/jest": "^25.2.1",
-    "aws-sdk": "^2.651.0",
+    "aws-sdk": "^2.814.0",
     "jest": "^25.2.7",
     "serverless": "^1.67.0",
     "serverless-pseudo-parameters": "^2.5.0",
